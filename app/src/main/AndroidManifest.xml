@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.amtee.friendsfinder">
+    <supports-screens
+        android:anyDensity="true"
+        android:compatibleWidthLimitDp="320"
+        android:largeScreens="true"
+        android:largestWidthLimitDp="320"
+        android:normalScreens="true"
+        android:requiresSmallestWidthDp="600"
+        android:resizeable="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+    <permission
+        android:name="com.amtee.friendsfinder.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.amtee.friendsfinder.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <permission
+        android:name="com.amtee.friendsfinder.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.amtee.friendsfinder.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".voolyfile.ApplicationFL"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        ///
+        //this for debug
+        <!--<meta-data-->
+            <!--android:name="com.google.android.maps.v2.API_KEY"-->
+            <!--android:value="AIzaSyCzhsxNV4VdEGboOixP39_lbAV_7tgb_ps" />-->
+
+
+        <!--// this for launch-->
+        <meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+        android:value="AIzaSyBMWaGu6_GiwgaTQ_SVLuYrgPsf0TsaIFs" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Welcome_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Main_Activity"
+            android:label="@string/title_activity_welcome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Resistration_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FriendSearch_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FriendRequestList_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".PrivacyPolicy_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".More_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".FriendList_Activity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".NotificationList_Activity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".AdressBookActivity"
+            android:screenOrientation="portrait"></activity>
+
+
+        <receiver
+            android:name=".gcmhandler.GCM_BroadcastReciever"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.amtee.friendsfinder" />
+            </intent-filter>
+        </receiver>
+        <service android:name=".gcmhandler.GCM_NotificationIntentService" />
+        <service android:name="com.appnext.core.AdsService" />
+        <activity android:name="com.appnext.ads.interstitial.InterstitialActivity"
+            android:hardwareAccelerated="true" android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name="com.appnext.ads.fullscreen.FullscreenActivity"
+            android:hardwareAccelerated="true" android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+    </application>
+
+</manifest>

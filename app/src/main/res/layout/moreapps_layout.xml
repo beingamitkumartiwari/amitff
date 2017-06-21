@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    tools:context="com.amtee.friendsfinder.More_Activity">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:foregroundGravity="center"
+        card_view:cardBackgroundColor="@color/windowBackground"
+        card_view:cardCornerRadius="7dp"
+        card_view:cardElevation="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:id="@+id/imgurl"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="2dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/appname"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Amit"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/appdescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:text="Get"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:padding="5dp">
+
+                    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foregroundGravity="center"
+                        card_view:cardBackgroundColor="#f94e0f"
+                        card_view:cardCornerRadius="7dp"
+                        card_view:cardElevation="7dp">
+
+                        <Button
+                            android:id="@+id/btndecription"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#f94e0f"
+                            android:clickable="false"
+                            android:focusable="false"
+                            android:padding="1dp"
+                            android:textSize="11sp" />
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="100dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:padding="3dp">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/imgurl"-->
+        <!--android:layout_width="60dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:padding="2dp" />-->
+
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/appname"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="Amit"-->
+        <!--android:textColor="@android:color/black" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/appdescription"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="Get"-->
+        <!--android:textColor="@android:color/black" />-->
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center">-->
+
+        <!--<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_width="111dp"-->
+        <!--android:layout_height="41dp"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:foregroundGravity="center"-->
+        <!--card_view:cardBackgroundColor="#f94e0f"-->
+        <!--card_view:cardCornerRadius="7dp"-->
+        <!--card_view:cardElevation="7dp">-->
+
+        <!--<Button-->
+        <!--android:id="@+id/btndecription"-->
+        <!--android:layout_width="109dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:background="#f94e0f"-->
+        <!--android:padding="1dp" />-->
+        <!--</android.support.v7.widget.CardView>-->
+        <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

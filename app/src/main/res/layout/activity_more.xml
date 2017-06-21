@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dcdcdc"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/welcome_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/images"
+                android:layout_width="@dimen/welcome_images_size"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/welcome_images_margin_top"
+                android:background="@color/colorPrimary"
+                android:clipChildren="false">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/heading"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/welcome_text_margin"
+                        android:layout_marginRight="@dimen/welcome_text_margin"
+                        android:layout_marginTop="44dp"
+                        android:text="Friend Finder"
+                        android:textAppearance="@style/WelcomeHeadingAppearance" />
+
+                    <TextView
+                        android:id="@+id/content"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/heading"
+                        android:layout_marginLeft="@dimen/welcome_text_margin"
+                        android:layout_marginRight="@dimen/welcome_text_margin"
+                        android:layout_marginTop="8dp"
+                        android:minHeight="@dimen/welcome_content_min_height"
+                        android:text="Created by Amtee Apps"
+                        android:textAppearance="@style/WelcomeContentAppearance" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/a001"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="56dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/profile" />
+            </FrameLayout>
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image_cartoon"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="50dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/welcomeicon"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/listview_ads"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="#4f4f4f">
+
+        </ListView>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:id="@+id/myAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

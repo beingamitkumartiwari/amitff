@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:layout_gravity="center"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="@string/ad_privacy_policy"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:typeface="serif" 
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <ScrollView 
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/policy_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="@android:color/transparent"
+            android:text="When you click on advertisements delivered by Micro Mini Apps, you will be directed to a third party’s webpage and we may pass certain of your information to the third parties operating or hosting these pages, including your email address, phone number and a list of the apps on your device. This policy will tell you what data we collect and how we use it for our games and apps. For more information on how we collect, use and share your data please read Privacy policy. If you do not wish to receive these ads delivered by Micro Mini Apps you can delete the apps any time."
+            android:textColor="#000000"
+            android:textSize="16sp" /></ScrollView>
+
+        <CheckBox
+            android:id="@+id/dontshowagainpolicy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:checked="true"
+            android:layout_marginLeft="10dp" 
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
+            android:text="Don&apos;t show again" 
+            android:layout_marginBottom="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/acceptPolicy"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:text="Accept"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/declinePolicy"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.5"
+            android:background="@android:color/transparent"
+            android:text="Decline"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:typeface="serif" />
+    </LinearLayout>
+
+</LinearLayout>

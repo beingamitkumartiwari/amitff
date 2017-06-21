@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/profile"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/home"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_friendlist"
+        android:icon="@drawable/friendlist"
+        android:title="Friend List" />
+    <item
+        android:id="@+id/nav_friendrequestlist"
+        android:icon="@drawable/friendlist"
+        android:title="Friend Requests" />
+    <item
+        android:id="@+id/nav_sendrequest"
+        android:icon="@drawable/friendrequestnotification"
+        android:title="Send Request" />
+
+    <item
+        android:id="@+id/nav_more"
+        android:icon="@drawable/more"
+        android:title="More" />
+
+    <item
+        android:id="@+id/nav_policy"
+        android:icon="@drawable/privacypolicy"
+        android:title="Privacy Policy" />
+
+</menu>
